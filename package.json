@@ -1,0 +1,24 @@
+{
+  "jspm": {
+    "directories": {},
+    "dependencies": {
+      "aurelia-animator-css": "github:aurelia/animator-css@^0.13.0",
+      "aurelia-bootstrapper": "github:aurelia/bootstrapper@^0.14.0",
+      "aurelia-bs-modal": "github:pwkad/aurelia-bs-modal@^0.2.1",
+      "aurelia-framework": "github:aurelia/framework@^0.13.3",
+      "aurelia-http-client": "github:aurelia/http-client@^0.10.0",
+      "bootstrap": "github:twbs/bootstrap@^3.3.5",
+      "font-awesome": "npm:font-awesome@^4.3.0"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.1.13",
+      "babel-runtime": "npm:babel-runtime@^5.1.13",
+      "core-js": "npm:core-js@^0.9.4"
+    }
+  },
+  "devDependencies": {
+    "browser-sync": "^2.8.0",
+    "gulp": "^3.9.0",
+    "gulp-typescript": "^2.8.0"
+  }
+}

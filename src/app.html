@@ -1,15 +1,16 @@
 <template>
 	<div style="margin:10px;">
-		<!--<modal showing.bind="showing">
-		<modal-header title="Edit Name" close.call="closeEventGoesHere()"></modal-header>
-		<modal-body content-view.bind="view-model-name-goes-here" content-model.bind="model-name-goes-here"></modal-body>
-		<modal-footer>
-			<button class="btn" click.trigger="someFunctionGoesHere()">Save</button>
-			<au-button text="Cancel" click.call="someFunctionGoesHere()"></au-button>
-		</modal-footer>
-	</modal>-->
+		<modal showing.bind="showing">
+			<modal-header title="Edit Name" close.call="closeDialog()"></modal-header>
+			<modal-body content-view.bind="editPersonDlg" content-model.bind="selectedName"></modal-body>
+			<modal-footer>
+				<button class="btn" click.trigger="saveDialogResult()">Save</button>
+				<au-button text="Cancel" click.call="closeDialog()"></au-button>
+			</modal-footer>
+		</modal>
 		<h1>Dialog Example</h1>
-		<div><button class="btn btn-primary">Change Name</button>&nbsp;&nbsp;Name&nbsp;${selectedName}</div>
+		<div>
+			<button click.trigger="showDialog()" class="btn btn-primary">Change Name</button>&nbsp;&nbsp;Name&nbsp;${selectedName}</div>
 		<table class="table table-hover">
 			<thead>
 				<th>Name</th>

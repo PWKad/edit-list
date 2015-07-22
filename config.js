@@ -26,6 +26,7 @@ System.config({
     "babel-runtime": "npm:babel-runtime@5.7.0",
     "bootstrap": "github:twbs/bootstrap@3.3.5",
     "core-js": "npm:core-js@0.9.18",
+    "css": "github:systemjs/plugin-css@0.1.13",
     "font-awesome": "npm:font-awesome@4.3.0",
     "jquery": "github:components/jquery@2.1.4",
     "github:aurelia/animator-css@0.13.0": {

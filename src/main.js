@@ -4,8 +4,7 @@ export function configure(aurelia) {
     .developmentLogging()
     // Install the plugin
     .plugin('aurelia-animator-css')
-    .plugin('aurelia-bs-modal')
-    .plugin('bootstrap');;
+    .plugin('aurelia-bs-modal');
 
   aurelia.start().then(a => a.setRoot());
 }

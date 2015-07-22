@@ -2,7 +2,7 @@
 	<div style="margin:10px;">
 		<modal showing.bind="showing">
 			<modal-header title="Edit Name" close.call="closeDialog()"></modal-header>
-			<modal-body content-view.bind="edit-person" content-model.bind="selectedPerson"></modal-body>
+			<modal-body content-view="edit-person" content-model.bind="selectedPerson"></modal-body>
 			<modal-footer>
 				<button class="btn btn-primary" click.trigger="saveDialogResult()">Save</button>
 				<au-button text="Cancel" click.call="closeDialog()"></au-button>

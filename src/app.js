@@ -1,9 +1,11 @@
 export class App {
-	selectedName = 'Martin';
-	showing = false;
-	names = ['Martin','Anders','Knud'];
 	
 	constructor(){
+		this.showing = false;
+		this.persons = [{first:"Martin",last:"Andersen"}, 
+		       {first:"Knud",last:"Larsen"}, 
+			   {first:"Inger",last:"Knudsen"}];
+		this.selectedPerson = this.persons[0];
 	}
 	
 	showDialog = () => {
@@ -16,11 +18,11 @@ export class App {
 	}
 
 	saveDialogResult = () => {
-		
+		this.closeDialog();
 	}
 	
-	selectName = (name) => {
-		this.selectedName = name;
+	selectPerson = (person) => {
+		this.selectedPerson = person;
 	}
 	
 }
